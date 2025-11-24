@@ -14,7 +14,7 @@ async function loadAddresses() {
 
   return new Promise((resolve, reject) => {
     const results = [];
-    const csvPath = path.join(process.cwd(), 'addresses.csv');
+    const csvPath = path.join(process.cwd(), 'public', 'addresses.csv');
 
     fs.createReadStream(csvPath)
       .pipe(csv())
